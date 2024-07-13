@@ -55,6 +55,7 @@
         }
 
         .card {
+            
            /* border: 2px solid purple;*/
             text-align: center;
             width: 20%;
@@ -76,6 +77,71 @@
             gap: 50px;
             justify-content: space-evenly;
            /* align-items: flex-end;*/
+        } 
+
+        .service-section{
+            width: 80%;
+            margin: 50px auto;
+            
+            border: 2px solid blue;
+           
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+
+        }
+        .service-image{
+           /* border: 2px solid red;*/
+        }
+
+        .service-image img{
+            width: 100%;
+        }
+
+            
+        
+
+        .service-info{
+           /* border: 2px solid green;*/
+            padding: 40px;
+
+        }
+
+        .service-title{
+            font-size: 40px;
+        }
+        .service-features{
+            list-style: none;
+            padding: 0;
+        }
+        .service-features li{
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: grey;
+            color: white;
+            padding: 60px;
+            display: grid;
+            grid-template-columns: 5fr 2fr 2fr;
+            gap: 50px;
+
+        }
+        footer h3{
+            margin: 0;
+        }
+        .main-links a,
+        .page-links a,
+        .social-links a {
+            
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+
         }
     </style>
 </head>
@@ -129,11 +195,98 @@
 
                 </div>
             </section>
+            <section class="service-section">
+                <div class="row">
+                    <div class="service-image"> 
+                        <img  src="undraw_online_stats_0g94.png" alt="">
+                    </div>
+
+                    
+                    <div class="service-info"> 
+                        <h2>Service Title</h2>
+                        <ul class="service-features">
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service feature 1
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service feature 2
+                            </li>  
+                                
+
+ 
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service feature 3
+                            </li>
+                            <li><i class="fa-regular fa-circle-check"></i>Service feature 4
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    
+
+                    
+                    <div class="service-info"> 
+                        <h2>Service Title</h2>
+                        <ul class="service-features">
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service feature 1
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service feature 2
+                            </li>  
+                                
+
+ 
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>Service feature 3
+                            </li>
+                            <li><i class="fa-regular fa-circle-check"></i>Service feature 4
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="service-image"> 
+                        <img  src="undraw_online_stats_0g94.png" alt="">
+                    </div>
+                    </div>
+
+            </section>
+            <section class="contact-section">
+
+            </section>
         </article>
 
     </main>
 
     <footer>
+        <div class="main-links">
+            <h3>Company Name</h3>
+            <p>&copy;2024, All Rights Reserved</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat quae eligendi similique asperiores veritatis deserunt aliquam reprehenderit. </p>
+
+        </div>
+        <div class="page-links">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+        <div class="social-links"> 
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>Facebook
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>Instagram
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>Linkedin
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-github"></i>Github
+            </a>
+        </div>
 
     </footer>
 </body>
