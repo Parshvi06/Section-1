@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header>
+    <!-- ========== HEADER ========== -->
+<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-blue-600 text-sm py-3 sm:py-0">
+    <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+      <div class="flex items-center justify-between">
+        <img class="w-24 px-4" src="https://cdn-icons-png.flaticon.com/128/12389/12389992.png" alt="">
+        <a class="flex-none text-xl font-semibold text-white" href="#" aria-label="Brand">ETHEREAL  GRACE  SERAPHIC</a>
+        <div class="sm:hidden">
+          <button type="button" class="hs-collapse-toggle size-9 flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-white/20 text-white hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+            <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end py-2 md:py-0 sm:ps-7">
+          <a class="py-3 ps-px sm:px-3 font-medium text-white" href="#" aria-current="page">Shop</a>
+          <a class="py-3 ps-px sm:px-3 font-medium text-white/80 hover:text-white" href="#">Account</a>
+          <a class="py-3 ps-px sm:px-3 font-medium text-white/80 hover:text-white" href="#">Store</a>
+          <a class="py-3 ps-px sm:px-3 font-medium text-white/80 hover:text-white" href="#">Blog</a>
+  
+          <div class="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] py-3 ps-px sm:px-3">
+            <button type="button" class="flex items-center w-full text-white/80 hover:text-white font-medium">
+              Dropdown
+              <svg class="flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+  
+            <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                About
+              </a>
+              <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] relative">
+                <button type="button" class="w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300">
+                  Sub Menu
+                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+  
+                <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full">
+                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                    About
+                  </a>
+                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                    Downloads
+                  </a>
+                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                    Team Account
+                  </a>
+                </div>
+              </div>
+  
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                Downloads
+              </a>
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300" href="#">
+                Team Account
+              </a>
+            </div>
+          </div>
+  
+          <a class="flex items-center gap-x-2 font-medium text-white/80 hover:text-white sm:border-s sm:border-white/30 py-2 md:py-0 sm:my-6 sm:ps-6" href="#">
+            <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Log in
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+  
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content">
+    <div class="max-w-[85rem] mx-auto py-10 px-4 sm:px-6 lg:px-8">
+      <!-- your content goes here ... -->
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  </header>
+  <main>
+    <section class="bg-gray-800 text-white p-4">
+        
+        <ul class="flex justify-center space-x-4">
+            <li><a href="#home" class="hover:text-gray-400 px-2">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-400 px-2">New Arrivals</a></li>
+            <li><a href="#services" class="hover:text-gray-400 px-2">Brands</a></li>
+            <li><a href="#contact" class="hover:text-gray-400 px-2">All Products</a></li>
+            
+        </ul>
+    </section>
+
+    
+        <article>
+            <section
+                class=" h-96 text-center flex justify-center flex-col items-center bg-[url('https://static.vecteezy.com/system/resources/previews/009/447/764/large_2x/summer-background-of-beach-vacation-holiday-theme-with-sand-wave-layer-top-view-paper-cut-tropical-summer-design-palm-leaves-surfboard-sunglass-beach-ball-cloud-on-yellow-sky-background-vector.jpg')] bg-cover bg-bottom text-white-500">
+                <h1 class="text-6xl text-black text-bolder m-0 ">SUMMER SALES</h1>
+                <p class="text-3xl text-black text-bolder pt-5 pb-7"> "Chic summer styles at unbeatable prices!"</p>
+                <button class="bg-red-500 py-2.5 px-5 text-lg border-2 border-black-500 text-black text-bolder  ">Shop Now</button>
+            </section> 
+            </article>
+
+            <h1 class=" text-3xl font-bold mb-6 text-center pt-14" >Spotlight Deals</h1>
+
+           
+<article>
+            <section class="pt-14 max-w-[98%] md:max-w-[90%] lg:max-w-[80%] mx-auto"> 
+
+                <div class="  grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <div class="border-2 shadow-md rounded-md">
+                        <img class=" h-64 object-contain w-full rounded-t-md"
+                            src="https://images-na.ssl-images-amazon.com/images/I/61REVmb7dZL.jpg"
+                            alt="">
+                        <div class="p-4">
+                            <h3 class="text-2xl">Party Dress</h3>
+                            
+    
+                            <div class="flex justify-between item-center mt-3 ">
+                                <p class="text-2xl font-bold">70% off</p>
+                                <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                    Explore More
+                                </button>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                    <div class="border-2 shadow-md rounded-md">
+                        <img class="h-64 object-contain w-full rounded-t-md"
+                            src="https://tse1.mm.bing.net/th?id=OIP.PtnXzxTAj1i_haNx3qFL8QHaKz&pid=Api&P=0&h=180"
+                            alt="">
+                        <div class="p-4">
+                            <h3 class="text-2xl">Rubbed Dress</h3>
+                            
+    
+                            <div class="flex justify-between item-center mt-3 ">
+                                <p class="text-2xl font-bold">50% off</p>
+                                <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                    Explore More
+                                </button>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                    <div class="border-2 shadow-md rounded-md">
+                        <img class=" h-64 object-contain w-full rounded-t-md"
+                            src="https://www.bardot.com/dw/image/v2/BCGZ_PRD/on/demandware.static/-/Sites-bardot-master-catalog/default/dwfca533df/images/hi-res/bardot/54749DB/54749DB_183945_TF_02.png?sw=1000&sh=1500&sm=fit"
+                            alt="">
+                        <div class="p-4">
+                            <h3 class="text-2xl">Frilled Dress</h3>
+                            
+    
+                            <div class="flex justify-between item-center mt-3 ">
+                                <p class="text-2xl font-bold">30% off</p>
+                                <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                    Explore More
+                                </button>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                    <div class="border-2 shadow-md rounded-md">
+                        <img class="h-64 object-contain w-full rounded-t-md"
+                            src="https://i.pinimg.com/originals/ab/0c/3e/ab0c3e5537057183a38b8c8956a6d4c3.jpg"
+                            alt="">
+                        <section class="p-4">
+                            <h3 class="text-2xl">Western Wears</h3>
+                           
+    
+                            <div class="flex justify-between item-center mt-3 ">
+                                <p class="text-2xl font-bold">10% off</p>
+                                <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                    Explore More
+                                </button>
+                            </div>
+
+                        </section>
+                        </article>
+                      
+                      <article class="pt-14">
+                        <section
+                           class="  pt-14 h-80 text-center flex justify-center flex-col items-center bg-[url('https://opoyi.com/wp-content/uploads/2023/01/opoyi_VEkWc8R37-1.jpg')] bg-cover bg-bottom text-white-500">
+                            <h1 class="text-6xl text-white text-bolder m-0 ">CANNES FESTIVAL</h1>
+                            <p class="text-2xl text-white text-bolder pt-7 pb-7"> "Gorgeous fashion collection for the 2024 Summer of the Cannes Festival!"</p>
+                            <button class="bg-black-500 py-2.5 px-5 text-m border-2 border-black-500 text-white text-bolder ">Shop Now</button>
+                        </section>
+                    </article>
+
+                    <h1 class=" text-3xl font-bold mb-6 text-center pt-14" >Featured Products</h1>
+
+                    <section class="pt-14 max-w-[98%] md:max-w-[90%] lg:max-w-[80%] mx-auto">
+
+
+
+
+
+                        <div class="  grid xl:grid-cols-4 lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 gap-5">
+                            <div class=" col-span-1 border-2 shadow-md rounded-md">
+                                <img class="  h-64 object-contain w-full rounded-t-md"
+                                    src="https://tse4.mm.bing.net/th?id=OIP.FWg3HxHC6YTOXqXBWaPzKwHaHa&pid=Api&P=0&h=180"
+                                    alt="">
+                                <div class="p-4">
+                                    <h3 class="text-xl">Leather Purse</h3>
+                                    
+            
+                                    <div class="flex justify-between item-center mt-3 ">
+                                        <p class="text-xl font-bold">New Arrivals</p>
+                                        <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                            Explore More
+                                        </button>
+                                    </div>
+            
+            
+            
+                                </div>
+                            </div>
+                            <div class="col-span-1 border-2 shadow-md rounded-md">
+                                <img class="  h-64 object-contain w-full rounded-t-md"
+                                    src="https://www.nsbpictures.com/wp-content/uploads/2018/07/sunglass-png-nsbpictures-1-1024x414.png"
+                                    alt="">
+                                <div class="p-4">
+                                    <h3 class="text-xl">Sunglasses</h3>
+                                    
+            
+                                    <div class="flex justify-between item-center mt-3 ">
+                                        <p class="text-xl font-bold">New Arrivals</p>
+                                        <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                            Explore More
+                                        </button>
+                                    </div>
+            
+            
+            
+                                </div>
+                            </div>
+                            <div class="col-span-1 border-2 shadow-md rounded-md">
+                                <img class=" h-64 object-contain w-full rounded-t-md"
+                                    src="https://tse1.explicit.bing.net/th?id=OIP.oVR2_aLxDXAiSH76CE5MHQHaHa&pid=Api&P=0&h=180"
+                                    alt="">
+                                <div class="p-4">
+                                    <h3 class="text-xl">Sandals</h3>
+                                    
+            
+                                    <div class="flex justify-between item-center mt-3 ">
+                                        <p class="text-xl font-bold">New Arrivals</p>
+                                        <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                            Explore More
+                                        </button>
+                                    </div>
+            
+            
+            
+                                </div>
+                            </div>
+                            
+                            <div class="col-span-1 border-2 shadow-md rounded-md">
+                                <img class="  h-64 object-contain w-full rounded-t-md"
+                                    src=" https://pluspng.com/img-png/png-sneakers-big-image-png-2400.png"
+                                    alt="">
+                                <div class="p-4">
+                                    <h3 class="text-xl">Sneakers</h3>
+                                   
+            
+                                    <div class="flex justify-between item-center mt-3 ">
+                                        <p class="text-xl font-bold">New Arrivals</p>
+                                        <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                            Explore More
+                                        </button>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                    <div class="col-span-1 border-2 shadow-md rounded-md">
+                                        <img class="  h-64 object-contain w-full rounded-t-md"
+                                            src="https://tse1.mm.bing.net/th?id=OIP.qLClB2zyvW0gshlE-nSh0gHaHa&pid=Api&P=0&h=180"
+                                            alt="">
+                                        <div class="p-4">
+                                            <h3 class="text-xl">Bracelets</h3>
+                                           
+                    
+                                            <div class="flex justify-between item-center mt-3 ">
+                                                <p class="text-xl font-bold">New Arrivals</p>
+                                                <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                                    Explore More
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                            <div class=" col-span-1 border-2 shadow-md rounded-md">
+                                                <img class=" h-64 object-contain w-full rounded-t-md"
+                                                    src="https://tse3.mm.bing.net/th?id=OIP.DvPARtacj63D9ZL_NEZnhgHaHa&pid=Api&P=0&h=180"
+                                                    alt="">
+                                                <div class="p-4">
+                                                    <h3 class="text-xl">Neckchains</h3>
+                                                   
+                            
+                                                    <div class="flex justify-between item-center mt-3 ">
+                                                        <p class="text-xl font-bold">New Arrivals</p>
+                                                        <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                                            Explore More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                                    <div class="col-span-1 border-2 shadow-md rounded-md">
+                                                        <img class="  h-64 object-contain w-full rounded-t-md"
+                                                            src="https://tse3.mm.bing.net/th?id=OIP.D73DFsCHq0en66x4L-06PQHaHa&pid=Api&P=0&h=180"
+                                                            alt="">
+                                                        <div class="p-4">
+                                                            <h3 class="text-xl">Earrings</h3>
+                                                           
+                                    
+                                                            <div class="flex justify-between item-center mt-3 ">
+                                                                <p class="text-xl font-bold">New Arrivals</p>
+                                                                <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                                                    Explore More
+                                                                </button>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+
+                                                            <div class=" col-span-1 border-2 shadow-md rounded-md">
+                                                                <img class="  h-64 object-contain w-full rounded-t-md"
+                                                                    src="https://tse4.mm.bing.net/th?id=OIP.Ahh6JRnF-XFPg9IoebHulgHaHa&pid=Api&P=0&h=180"
+                                                                    alt="">
+                                                                <div class="p-4">
+                                                                    <h3 class="text-xl">Rings</h3>
+                                                                   
+                                            
+                                                                    <div class="flex justify-between item-center mt-3 ">
+                                                                        <p class="text-xl font-bold">New Arrivals</p>
+                                                                        <button class="bg-blue-600 py-2 px-3 text-white rounded-md">
+                                                                            Explore More
+                                                                        </button>
+                                                                    </div>    
+                                                                </div>  
+                                                             </div>              
+                                </div>
+                                    
+        
+                                </section>
+
+                                <article class="pt-14">
+                                    <section
+                                       class="  pt-14 h-80 text-center flex justify-center flex-col items-center bg-[url('https://wallpapercave.com/wp/wp7937430.jpg')] bg-cover bg-bottom text-white-500">
+                                        <h1 class="text-7xl text-white text-bolder m-0 ">200+</h1>
+                                        <p class="text-2xl text-white text-bolder pt-7 pb-7"> "Gorgeous fashion trends for the 2024 Summer !"</p>
+                                        <button class="bg-black-500 py-2.5 px-5 text-m border-2 border-black-500 text-white text-bolder ">Shop Now</button>
+                                    </section>
+
+                                </article>
+
+                                <h1 class=" text-3xl font-bold mb-6 text-center pt-14" >Brand Collaborators</h1>
+
+                                <section class="pt-14 max-w-[98%] md:max-w-[90%] lg:max-w-[80%] mx-auto">
+
+                                    <div class="  grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2 ">
+                                        <div class=" shadow-md rounded-md">
+                                            <img class=" h-64 object-contain w-full rounded-t-md"
+                                                src="https://www.adityabirlaventures.com/wp-content/uploads/2022/06/GIVA-logo-black.png"
+                                                alt="">
+                                                </div>
+
+                                                <div class=" shadow-md rounded-md">
+                                                    <img class=" h-64 object-contain w-full rounded-t-md"
+                                                        src="https://tse4.mm.bing.net/th?id=OIP.D9HPjW2IuHtsV3LnKJiPvwHaHa&pid=Api&P=0&h=180"
+                                                        alt="">
+                                                        </div>
+
+                                                        <div class="shadow-md rounded-md">
+                                                            <img class=" h-64 object-contain w-full rounded-t-md"
+                                                                src="https://www.pngarts.com/files/10/Chanel-Logo-PNG-Picture.png"
+                                                                alt="">
+                                                                </div>
+
+                                                                <div class=" shadow-md rounded-md">
+                                                                    <img class=" h-64 object-contain w-full rounded-t-md"
+                                                                        src="https://www.faeringcapital.com/assets/images/color-logos/biba.png"
+                                                                        alt="">
+                                                                        </div>
+                                                               </div>
+                                                               </section>     
+                                
+
+
+  </main>
+
+  <footer class="px-16 py-16 bg-gray-300 mt-8">
+
+    <div class="grid grid-cols-12 mx-w-[90%]  lg-max-w-[80%] mx-auto gap-5">
+        <div class="col-span-12 md:col-span-6">
+            <h1 class="text-3xl font-bold my-3">Ethereal Grace Seraphic</h1>
+
+
+            <p class="text-lg font-bold">&copy;2024,All Rights Reserved</p>
+
+
+
+            <p>Discover our clothing brand, where style meets sustainability.
+
+                We offer timeless, high-quality pieces crafted from eco-friendly materials, ensuring you look good while doing good for the planet.</p>
+
+        </div>
+        <div class=" col-span-4 md:col-span-2">
+            <div class="color-white-500 block mb-10 text-1.1em">
+                <h1 class="text-xl font-bold my-3">Navigate</h1>
+                <a class="block  text-black hover:text-blue-600 text-lg" href="#">About Us</a>
+                <a class="block  text-black hover:text-blue-600 text-lg" href="#">Contact Us</a>
+                <a class="block  text-black hover:text-blue-600 text-lg" href="#">My Orders</a>
+                <a class="block  text-black hover:text-blue-600 text-lg" href="#">Terms & Conditions</a>
+                <a class="block  text-black hover:text-blue-600 text-lg" href="#">Returns & Exchanges</a>
+            </div>
+
+        </div>
+        <div class="col-span-4 md:col-span-2">
+            <h1 class="text-xl font-bold my-3 ">Quick Links</h1>
+            <a class="block text-black hover:text-blue-600 text-lg" href="#">Home</a>
+            <a class="block text-black hover:text-blue-600 text-lg" href="#">Sales</a>
+            <a class="block text-black hover:text-blue-600 text-lg" href="#">Services</a>
+            <a class="block text-black hover:text-blue-600 text-lg" href="#">Brand Collaborators</a>
+
+
+        </div>
+        <div class="col-span-4 md:col-span-2">
+            <h1 class="text-xl font-bold my-3 ">Categories</h1>
+            <a class="block text-black hover:text-blue-600 text-lg" href="#">Ethnics</a>
+            <a class="block text-black hover:text-blue-600 text-lg" href="#">Westerns</a>
+            <a class="block text-black hover:text-blue-600 text-lg" href="#">Jewelry Accessories</a>
+            <a class="block text-black hover:text-blue-600 text-lg" href="#">Bags & More</a>
+
+        </div>
+
+</footer>
+
+  </h1>
+</body>
+</html>
