@@ -14,3 +14,5 @@ console.log(a)
 console.log(y)
 
 
+n=4
+console.log(n)
