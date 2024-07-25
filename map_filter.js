@@ -54,3 +54,4 @@ const nnn = ['ramu', 'shamu', 'pinki', 'kaliya']
 const str= nnn.map((k)=>{return (k.toUpperCase())})
 console.log(str);
 
+
